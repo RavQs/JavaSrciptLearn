@@ -3,8 +3,31 @@ const lastName = "WARUDO"
 let age = 25
 const isTrue = true
 const firstName = 'VASYAN'
+const pow = 10e2
+console.log(pow)
+
+console.log("MAX INTEGER",Number.MAX_SAFE_INTEGER)
+console.log("MIN INTEGER", Number.MIN_SAFE_INTEGER)
+console.log("MAX VALUE",Number.MAX_VALUE)
+console.log("MIN VALUE",Number.MIN_VALUE)
+
+const name = "42"
+console.log(Number.parseInt(name) + 3)
+
+console.log(+(0.4 + 0.2).toFixed(10))
+
+console.log(Math.pow(5,3))
+console.log(Math.round(3.4))
+console.log(Math.round(3.5))
 */
 
+console.log(getRandomIntInclusive(0,100)) //Вывод от нуля до 100 случайных чисел
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
 
 /*
 console.log(typeof firstName)
@@ -68,8 +91,6 @@ function trueCar(cars) {
 
 /*
  Объекты
-*/
-
 const person = {
     firstName: "Vlad",
     lastName: "Mor",
@@ -89,5 +110,7 @@ person.greet()
 const key = "languages"
 console.log(person[key]) // Получаем массив
 person.isLeave = true //Добавляем новые поля в обьект извне
+*/
+
 
 
